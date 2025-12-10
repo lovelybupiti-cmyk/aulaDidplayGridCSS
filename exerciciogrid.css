@@ -12,11 +12,13 @@ main {
     gap: 24px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
+    padding: 0 70px;
 }
 
 section {
     background-color: #fff;
     border-radius: 20px;
+    padding: 25px;
 }
 
 .section-metricas {
@@ -28,26 +30,40 @@ section {
     border-radius: 16px;
 }
 
+.section-metricas > div {
+    padding: 12px 30px;
+    border-radius: 20px;
+}
+
 .div-adoção {
     background: radial-gradient(#ffffff2a, #5383EC);
-    border-radius: 6px;
 }
 
 .div-engaj {
     background: radial-gradient(#ffffff2a, #9C55EC);
-    border-radius: 6px;
 }
 
 .div-reten {
     background: radial-gradient(#ffffff2a, #111E5F);
-    border-radius: 6px;
 }
 
 .div-sucess {
     background: radial-gradient(#ffffff2a, #F1911E);
-    border-radius: 6px;
 }
 
 .section-metricas, .section-vendas {
     grid-column: span 2;
+}
+
+.section-felicidade, .section-engaj {
+    padding: 25px;
+}
+
+.section-felicidade {
+text-align: center;
+}
+
+.section-felicidade h1 {
+    text-align: left;
+    margin-bottom: 70px;
 }
