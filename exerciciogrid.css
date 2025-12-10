@@ -23,11 +23,30 @@ section {
     background-color: transparent;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 16px 8px;
+    border-radius: 16px;
 }
 
-.div-adoção [
+.div-adoção {
+    background: radial-gradient(#ffffff2a, #5383EC);
+    border-radius: 6px;
+}
 
-]
+.div-engaj {
+    background: radial-gradient(#ffffff2a, #9C55EC);
+    border-radius: 6px;
+}
+
+.div-reten {
+    background: radial-gradient(#ffffff2a, #111E5F);
+    border-radius: 6px;
+}
+
+.div-sucess {
+    background: radial-gradient(#ffffff2a, #F1911E);
+    border-radius: 6px;
+}
 
 .section-metricas, .section-vendas {
     grid-column: span 2;
