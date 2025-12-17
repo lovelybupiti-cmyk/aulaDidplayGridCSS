@@ -4,51 +4,119 @@
     outline: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 70px 110px;
+    background-color: #fff;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #23306A;
+    font-weight: 200;
+    width:500px;
+}
+
+header h1 > span {
+    font-weight: 600;
 }
 
 main {
+    margin-top: -60px;
     background-color: #d9d9d9;
     display: grid;
-    gap: 24px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 100px 400px 1fr;
+    gap: 24px;
     padding: 0 70px;
 }
 
 section {
     background-color: #fff;
     border-radius: 20px;
-    padding: 25px;
+}
+
+section h1 {
+    font-size: 22px;
+    font-weight: 200;
+    color: aliceblue;
+    font-family: "montserrat", sans-serif;
+}
+
+section img {
+    width: 100%;
 }
 
 .section-metricas {
     background-color: transparent;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 16px 8px;
-    border-radius: 16px;
+    gap: 20px;
+    color: #fff;
 }
 
 .section-metricas > div {
+    z-index: 2;
     padding: 12px 30px;
     border-radius: 20px;
 }
 
+.metrica-span1 {
+    font-size: 36px;
+    font-weight: 600;
+    display: block;
+}
+
+.metrica-span2 {
+    color: #82ffb7;
+}
+
+.metrica-span2::before {
+    content: url(./assets/Vector\ seta.png);
+    margin-right: 5px;
+}
+
+.adoção,.engaj, .reten, .sucess, .section-vendas h1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adoção::after {
+content: url(./assets/Vector.png);
+}
+
+.engaj::after {
+content: url(./assets/fi-br-comment.png);
+}
+
+.reten::after {
+content: url(./assets/fi-br-spinner-alt.png);
+}
+
+.sucess::after {
+content: url(./assets/fi-br-trophy.png);
+}
+
 .div-adoção {
-    background: radial-gradient(#ffffff2a, #5383EC);
+    background: linear-gradient(190deg, #9bb7f4, #5383EC);
 }
 
 .div-engaj {
-    background: radial-gradient(#ffffff2a, #9C55EC);
+    background: radial-gradient(circle at top center, #d0aef6, #9C55EC);
 }
 
 .div-reten {
-    background: radial-gradient(#ffffff2a, #111E5F);
+    background: radial-gradient(circle at top center, #8f95b4, #111E5F);
 }
 
 .div-sucess {
-    background: radial-gradient(#ffffff2a, #F1911E);
+    background: radial-gradient(circle at top center, #f8c68b, #F1911E);
 }
 
 .section-metricas, .section-vendas {
@@ -66,4 +134,40 @@ text-align: center;
 .section-felicidade h1 {
     text-align: left;
     margin-bottom: 70px;
+    color: #29366E;
+    font-weight: 400;
+}
+
+.section-felicidade img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.section-felicidade h1::before {
+    content: url(./assets/fi-br-comment-heart.png);
+    margin-right: 5px;
+
+}
+
+.section-engaj h1 {
+    text-align: left;
+    margin-bottom: 70px;
+    color: #29366E;
+    font-weight: 400;
+}
+
+.section-engaj h1::before {
+    content: url(./assets/fi-br-comment-alt.png);
+    margin-right: 5px;
+}
+
+.section-vendas h1 {
+    text-align: left;
+    color: #29366E;
+    font-weight: 400;
+    padding: 35px 50px;
+}
+
+.section-vendas h1::after {
+    content: url(./assets/fi-br-money.png);
 }
